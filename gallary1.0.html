@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link>
+  <link rel='stylesheet' href='gallery.1.1.css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  <div class='navbar'>
+     <a href=' 'class='nav'>Homepage</a >
+     <a href=''class='nav'>Login</a >
+     <a href='C:\Users\Jack苏\Desktop\Daily Dose\Clubs.Dose.html'class='nav' >Clubs</a >
+     <a href=''class='nav'>Events</a >
+     <a href=''class='nav'>Gallery</a >
+     <a href=''class='nav'>Forum</a >
+   </div><!--nav-->
+<main class='gallery'>
+  <div class='gallery-track'>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_151432.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_151711.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_152212.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_160257.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_163236.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_165239.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_171511.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_172439.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='IMG_20240203_180115.jpeg'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='1.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='2.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='3.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='4.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='5.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='6.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='7.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='8.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='9.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='10.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='11.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='12.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='13.JPG'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='14.png'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-image-wrapper'>
+        <img src='15.JPG'>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gallery = document.querySelector('.gallery');
+const track = document.querySelector('.gallery-track');
+const cards = document.querySelectorAll('.card');
+const easing = 0.05;
+let startY = 0;
+let endY = 0;
+let raf;
+
+const lerp = (start,end,t) => start * (1-t) + end * t;
+
+function updateScroll() {
+  startY = lerp(startY,endY,easing);
+  gallery.style.height = `${track.clientHeight}px`;
+  track.style.transform = `translateY(-${startY}px)`;
+  activateParallax();
+  raf = requestAnimationFrame(updateScroll);
+  if (startY.toFixed(1) === window.scrollY.toFixed(1)) cancelAnimationFrame(raf);
+}
+
+function startScroll() {
+  endY = window.scrollY; 
+  cancelAnimationFrame(raf);
+  raf = requestAnimationFrame(updateScroll);
+}
+
+function parallax(card) {
+  const wrapper = card.querySelector('.card-image-wrapper');
+  const diff = card.offsetHeight - wrapper.offsetHeight;
+  const {top} = card.getBoundingClientRect();
+  const progress = top / window.innerHeight;
+  const yPos = diff * progress;
+  wrapper.style.transform = `translateY(${yPos}px)`;
+}
+
+const activateParallax = () => cards.forEach(parallax);
+
+function init() {
+  activateParallax();
+  startScroll();
+}
+
+window.addEventListener('load',updateScroll,false);
+window.addEventListener('scroll',init,false);
+window.addEventListener('resize',updateScroll,false);
+</script>
+</main>
+</body>
+</html>
