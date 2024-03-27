@@ -41,7 +41,7 @@ li a:hover:not(.active) {
   <li><a href="#about">About</a></li>
 </ul>
 
-<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+<div style="padding:20px;margin-top:30px;background-color:darkred;height:1500px;">
   
 </div>
 
@@ -53,8 +53,8 @@ body {
 }
 
 header {
-    background-color: #007BFF;
-    color: #FFFFFF;
+    background-color: darkred;
+    color: darkred;
     padding: 20px;
     text-align: center;
 }
@@ -70,18 +70,18 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #FFFFFF;
+    color: darkred;
     text-decoration: none;
 }
 
 section {
     padding: 20px;
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px solid darkred;
 }
 
 footer {
     background-color: #007BFF;
-    color: #FFFFFF;
+    color: darkred;
     text-align: center;
     padding: 10px;
     position: fixed;
