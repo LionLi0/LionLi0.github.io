@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1>Advanced Blockchain</h1>
+<h3>Abstract: Recently, more and more companies are curious about the concept and real life application of blockchain. In this paper I’ll take some useful examples to make a brief introduction to show how blockchain works in manufacturing. 
+</h3>
+<p>
+Have you ever been hacked when you view some websites? Did you ever think some third parties could help you to record your behaviors which sends your data to the other side? From 2008, a group of people first conceptualized the blockchain, and in 2018, blockchain became more and more popular with the heat of bitcoin. People always talk about blockchain and the thing behind it —”Web 3.0”. In this situation, I’ll not share the history or process of blockchain but application, future development of this sort of new things.
+</p>
+<p>
+Since it has enhanced security, great transparency and this sort of functionality, there are more and more applications people thought will make them come true.
+</p>
+<p>
+	First of all, the medical record. When we come to the clinic doing our annual physical examination, we all want our physical situation to be known specifically. Nowadays, people can combine the blockchain technology with the whole medical system; For example, if you are cut by a rusty blade, and you have a phone call with your family doctor for an appointment. After a short while, your family doctor searches your previous ‘block’, which means your passed result of physical examination, helps you to disinfect your wound, and takes the tetanus vaccine.  Unfortunately, you have other symptoms like fever, headache, and so on, after vaccination. Then you anxiously go to the hospital looking for treatment. Luckily, your own physical situation, case of illness, even the experience of vaccination have been sent to the hospital system by your family doctor. Thanks to that, you finally get much better since the worth of blockchain. That might be a simple process of seeing a doctor in the future. With the development of blockchain, it might also strengthen healthcare data defenses, manage the medicine supply chain and help healthcare researchers unlock genetic code.
+</p>
+<p>
+	Take the supply chain, there are so many big companies that need to check out their products whether good or broken. Like Amazon, Walmart… The background workers always wonder which step makes these products broken. Usually, It will take several days to find the reason, but with the blockchain technology, each station can be determined quickly. You can gather information on each step from the tender offer, from the carrier to the proof of delivery, and the approval of payment. This information is automatically captured and synchronized in real time, and it’s visible only to these parties in this transaction. 
+
+</p>
+<p>
+	Lastly, I’d like to talk about the future of blockchain. According to a speech which was delivered in Alberta, by Don Tapscott who is a famous businessman in Canada, there are five opportunities for prosperity of blockchain. 1: Protect right through immutable record. 2: Creating a true sharing economy. 3: Ending remittance rip-off. 4: Enabling citizens to own and monetize their data(& protect privacy) 5: Ensuring compensation for creators of value. I’d like to focus on the third part, fourth part, and fifth part. 
+
+</p>
+<p>
+	 Many foreign workers are gaining money to solve their basic living requirements and then send the rest of the money back to their parents. But not only will it take a lot of time to wait for the procedure, but also I have to pay a foreign transaction fee. It really matters, but what if we use blockchain it will take several minutes sending money and less foreign transaction fee? Anyways, let’s take a guess, if we purchase something on a website then it means that you create unique data about yourself. In other words, the data you create it’s also your private asset. What if an online shopping platform can only see whether we buy or not without anything else? That must help us a lot, and protect our privacy as well. Also, there are so many lyric writers, fiction writers, who always post their works online, but can’t receive fair compensation. What if we post our songs on a blockchain ecosystem which can help authors protect their intellectual property right? Thanks to blockchain, life is becoming more and more convenient and prosperous. Hope scientists could update new products contained advanced blockchain technology in the near future.
+</p>
+<p>
+Daley, S. (2024, April 10). Blockchain in Healthcare: 18 Examples to Know. Builtin. Retrieved April 26, 2024, from https://builtin.com/blockchain/blockchain-healthcare-applications-companies
+[10 Min For Supply Chain]. (2022, February 12). Blockchain Technology in Supply Chain | How Walmart saves Millions of $ by Blockchain [Video]. Youtube. https://www.youtube.com/watch?v=if7Lv8TnvG0
+[TED]. (2016, September 16). How the blockchain is changing money and business | Don Tapscott [Video]. Youtube. https://www.youtube.com/watch?v=Pl8OlkkwRpc
+Blockchain. (2024, April 22). In Wikipedia. https://en.wikipedia.org/wiki/Blockchain#History
+
+</p>
+</body>
+</html>>
